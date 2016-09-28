@@ -1,11 +1,8 @@
+# %PYTHONPATH_2%/python fltr_wlog_trbts.py ..\nasa_wlog_data\small_access_log_Jul95_01.txt
+
 import sys
 import re
 
-print "Helloooo World!!!"
-
-print str(sys.argv)
-
-with open(sys.argv[1], 'r') as infile:
-    for line in infile:
-        match = re.search(r'\d+$', line)
-        print match.group();
+for line in sys.stdin.readlines():
+    match = re.search(r'\d+$', line)
+    print match.group();
