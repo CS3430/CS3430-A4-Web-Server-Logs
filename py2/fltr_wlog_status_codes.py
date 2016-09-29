@@ -7,4 +7,4 @@ for line in sys.stdin.readlines():
     match = re.search(r'.* (\d+) \d+$', line)
     foundCode = match.group(1)
     if foundCode == code:
-        sys.stdout.write( str(match.group()) + '\n')
+        sys.stdout.write( line + '\n')
