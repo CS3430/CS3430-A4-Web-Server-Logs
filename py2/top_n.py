@@ -5,4 +5,4 @@ n = int(sys.argv[1])
 
 for i in xrange(n):
     sys.stdout.write( sys.stdin.readline() + '\n' )
-sys.stdout.flush();
+    sys.stdout.flush()
