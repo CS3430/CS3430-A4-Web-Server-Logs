@@ -5,4 +5,4 @@ import re
 
 for line in sys.stdin.readlines():
     match = re.search(r'\d+$', line)
-    print match.group();
+    sys.stdout.write( str(match.group()) + '\n')
